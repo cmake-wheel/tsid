@@ -1,7 +1,7 @@
 [build-system]
 build-backend = "cmeel"
 requires = [
-  "cmeel-boost >= 1.87.0 < 1.88",
+  "cmeel-boost >= 1.87.0, < 1.88",
   "cmeel[build]",
   "coal-library[build] >= 3, < 4",
   "eiquadprog",
@@ -11,7 +11,7 @@ requires = [
 
 [project]
 dependencies = [
-  "cmeel-boost >= 1.87.0 < 1.88",
+  "cmeel-boost >= 1.87.0, < 1.88",
   "eiquadprog",
   "pin"
 ]
