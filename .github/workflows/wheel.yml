@@ -31,7 +31,7 @@ jobs:
           python -m pip install wheel
       - name: build cmeel wheel
         run: python -m pip wheel -vw wh .
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           path: wh
 
