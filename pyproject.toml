@@ -19,7 +19,7 @@ dependencies = [
 description = "A fast and flexible implementation of Rigid Body Dynamics algorithms and their analytical derivatives"
 license = "BSD-3-Clause"
 name = "tsid"
-version = "1.7.1"
+version = "1.9.0"
 
 [project.urls]
 changelog = "https://github.com/stack-of-tasks/tsid/blob/devel/CHANGELOG.md"
