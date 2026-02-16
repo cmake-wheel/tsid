@@ -27,6 +27,7 @@ homepage = "https://github.com/cmake-wheel/tsid"
 upstream = "https://github.com/stack-of-tasks/tsid"
 
 [tool.cmeel]
+build-number = 1
 configure-args = [
   "-DBUILD_PYTHON_INTERFACE=ON",
   "-DBUILD_STANDALONE_PYTHON_INTERFACE=ON",
