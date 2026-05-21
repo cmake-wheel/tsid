@@ -1,25 +1,25 @@
 [build-system]
 build-backend = "cmeel"
 requires = [
-  "cmeel-boost ~= 1.89.0",
+  "cmeel-boost ~= 1.90.0",
   "cmeel[build]",
   "eiquadprog[build]",
-  "libtsid[build] == 1.9.0",
+  "libtsid[build] == 1.10.0",
   "pin[build]",
   "scipy"
 ]
 
 [project]
 dependencies = [
-  "cmeel-boost ~= 1.89.0",
+  "cmeel-boost ~= 1.90.0",
   "eiquadprog",
-  "libtsid == 1.9.0",
+  "libtsid == 1.10.0",
   "pin"
 ]
 description = "A fast and flexible implementation of Rigid Body Dynamics algorithms and their analytical derivatives"
 license = "BSD-3-Clause"
 name = "tsid"
-version = "1.9.0"
+version = "1.10.0"
 
 [project.urls]
 changelog = "https://github.com/stack-of-tasks/tsid/blob/devel/CHANGELOG.md"
@@ -27,7 +27,6 @@ homepage = "https://github.com/cmake-wheel/tsid"
 upstream = "https://github.com/stack-of-tasks/tsid"
 
 [tool.cmeel]
-build-number = 1
 configure-args = [
   "-DBUILD_PYTHON_INTERFACE=ON",
   "-DBUILD_STANDALONE_PYTHON_INTERFACE=ON",
