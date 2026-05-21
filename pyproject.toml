@@ -1,19 +1,19 @@
 [build-system]
 build-backend = "cmeel"
 requires = [
-  "cmeel-boost ~= 1.89.0",
+  "cmeel-boost ~= 1.90.0",
   "cmeel[build]",
   "eiquadprog[build]",
-  "libtsid[build] == 1.9.0",
+  "libtsid[build] == 1.10.0",
   "pin[build]",
   "scipy"
 ]
 
 [project]
 dependencies = [
-  "cmeel-boost ~= 1.89.0",
+  "cmeel-boost ~= 1.90.0",
   "eiquadprog",
-  "libtsid == 1.9.0",
+  "libtsid == 1.10.0",
   "pin"
 ]
 description = "A fast and flexible implementation of Rigid Body Dynamics algorithms and their analytical derivatives"
