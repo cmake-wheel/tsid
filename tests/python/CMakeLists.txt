@@ -8,10 +8,12 @@ set(${PYWRAP}_TESTS
     Solvers
     Tasks
     Trajectories
-    Deprecations
-    Measured6DWrench)
+    # Deprecations
+    Measured6DWrench
+)
 
 foreach(test ${${PYWRAP}_TESTS})
-  add_python_unit_test("py-${test}" "tests/python/test_${test}.py"
-                       "bindings/python")
+    add_python_unit_test("py-${test}" "tests/python/test_${test}.py"
+                         "bindings/python"
+    )
 endforeach(test ${${PYWRAP}_TESTS})

@@ -7,7 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.9.0] - 1980-01-01
+## [1.10.0] - 2026-04-14
+
+- Fix inverted condition in setSupportLimitsXAxis/YAxis
+- Fix pinocchio 2 -> 3 migration, to fix build with pinocchio 4
+- ROS: jrl_cmakemodules dependency + kilted CI
+- CMake: don't use mathjax by default
+- CMake: remove submodule
+- Nix: switch to flakoboros
+
+## [1.9.0] - 2025-09-29
 
 - Fix value of nEq when removeRigidContact for contact with priority > 0
 - update jrl-cmakemodules to v1
@@ -180,7 +189,8 @@ It also fixes some issues with respect to the packaging.
 This is the first release of TSID.
 This release includes minimal features for the torque control of humanoid robots such as HRP-2.
 
-[Unreleased]: https://github.com/stack-of-tasks/tsid/compare/v1.9.0...HEAD
+[Unreleased]: https://github.com/stack-of-tasks/tsid/compare/v1.10.0...HEAD
+[1.10.0]: https://github.com/stack-of-tasks/tsid/compare/v1.9.0...v1.10.0
 [1.9.0]: https://github.com/stack-of-tasks/tsid/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/stack-of-tasks/tsid/compare/v1.7.1...v1.8.0
 [1.7.1]: https://github.com/stack-of-tasks/tsid/compare/v1.7.0...v1.7.1

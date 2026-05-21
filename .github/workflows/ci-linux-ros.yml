@@ -17,6 +17,7 @@ jobs:
         env:
           - {ROS_DISTRO: humble}
           - {ROS_DISTRO: jazzy}
+          - {ROS_DISTRO: kilted}
           - {ROS_DISTRO: rolling}
     env:
       CCACHE_DIR: /github/home/.ccache # Enable ccache
@@ -24,16 +25,14 @@ jobs:
       CMAKE_ARGS: -DBUILD_WITH_OSQP=ON -DBUILD_WITH_PROXQP=ON -DBUILD_WITH_VECTORIZATION_SUPPORT=OFF  # Simde is not available yet
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           submodules: recursive
-      # eiquadprog is not yet available in ROS2
-      - run: sed -i "/eiquadprog/d" package.xml
       # This step will fetch/store the directory used by ccache before/after the ci run
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: ${{ env.CCACHE_DIR }}
           key: ccache-${{ matrix.env.ROS_DISTRO }}-${{ matrix.env.ROS_REPO }}
       # Run industrial_ci
-      - uses: 'ros-industrial/industrial_ci@eb3ea328ff056aa2435d5b3493e7e2929c310f8e'
+      - uses: 'ros-industrial/industrial_ci@0f4bd2d1b926eac95fd6bc5bd1fcb3051a6e927d'
         env: ${{ matrix.env }}
